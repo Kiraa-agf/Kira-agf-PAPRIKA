@@ -1,56 +1,132 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>PAPRIKA 2025</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PERKASA 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Nunito:wght@700&display=swap" rel="stylesheet" />
   <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
-      background: url('https://i.imgur.com/5qHgFmL.jpeg') no-repeat center center fixed;
+      background: url('https://i.imgur.com/2v6mkyq.jpeg') no-repeat center center fixed;
       background-size: cover;
-      padding-top: 50px;
       color: white;
-    }
-
-    h1 {
+      position: relative;S               S                 h1 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
       color: white;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-      font-family: Arial, sans-serif;
+      font-size: 2.5rem;
+      margin-top: 30px;
+      text-align: center;
     }
 
-    .button-container {
-      margin-top: 150px; /* Menambah jarak lebih banyak untuk tombol */
-    }
-
-    .button {
-      display: inline-block;
-      padding: 15px 30px;
-      margin: 20px;
-      font-size: 18px;
-      color: white;
-      background-color: #65552c;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: all 0.3s ease;
+    .sticker {
+      position: absolute;
+      width: 250px;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      cursor: pointer;
+      
+      /* Bikin tidak kotak, sesuai bentuk PNG */
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-size: cover;
+      mask-repeat: no-repeat;
+      mask-size: cover;
     }
 
-    .button:hover {
-      background-color: #7a6635;
-      transform: translateY(-5px) scale(1.05);
-      box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+    /* Hover efek */
+    .sticker:hover {
+      transform: scale(1.08);
+      box-shadow: 0 8px 12px rgba(0,0,0,0.3);
+      
+    }
+    .sticker-3 {
+      transition: scale 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .sticker-3:hover {
+      transform: scale(1.1);
+    }
+
+    /* Tempat stiker desktop */
+    .sticker-1 {
+      top: 160px;
+      left: 35%;
+      -webkit-mask-image: url('https://i.imgur.com/W1IMMhA.png');
+      mask-image: url('https://i.imgur.com/W1IMMhA.png');
+    }
+
+    .sticker-2 {
+      top: 160px;
+      right: 65%;
+      -webkit-mask-image: url('https://i.imgur.com/Low5nVV.png');
+      mask-image: url('https://i.imgur.com/Low5nVV.png');
+    }
+Z
+    .sticker-3 {
+      top: 350px;
+      right: 55%;
+      -webkit-mask-image: url('https://i.imgur.com/LHZdQhs.png');
+      mask-image: url('https://i.imgur.com/LHZdQhs.png');
+    }
+
+    /* Tampilan mobile */
+    @media (max-width: 600px) {
+      body {
+        background: url('https://i.imgur.com/qcmLwKW.jpeg') no-repeat center center fixed;
+        background-size: cover;
+      }
+
+      .sticker {
+        width: 50%;
+      }
+
+      .sticker-1 {
+        top: 35%;
+        left: 50%;
+      }
+
+      .sticker-2 {
+        top: 35%;
+        right: 50%;
+      }
+
+      .sticker-3 {
+        top: 60%;
+        left: 30%;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        margin-top: 20px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>Pendaftaran Lomba PAPRIKA</h1>
+  <h1></h1>
 
-  <div class="button-container">
-    <a class="button" href="https://forms.gle/gqPHuWFzGwz2mm8E8" target="_blank">Lomba Pidato</a>
-    <a class="button" href="https://forms.gle/DpssSLoCmj4ercAf6" target="_blank">Lomba Putri SMANAVA</a>
-  </div>
+  <a href="https://forms.gle/9pbmC55HuY62HdRV9" target="_blank">
+    <img class="sticker sticker-1" src="https://i.imgur.com/zx1hVgF.png" alt="">
+  </a>
+
+  <a href="https://forms.gle/WsSn5y4ShVu6Tptt9" target="_blank">
+    <img class="sticker sticker-2" src="https://i.imgur.com/gTNF30B.png" alt="">
+  </a>
+
+  <a href="https://forms.gle/8euseogeSz2574Az6" target="_blank">
+    <img class="sticker sticker-3" src="https://i.imgur.com/Uw05G53.png" alt="">
+  </a>
 
 </body>
 </html>
