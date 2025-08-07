@@ -79,6 +79,7 @@
       mask-image: url('https://i.imgur.com/LHZdQhs.png');
     }
 
+    /* Responsive: Tampilan mobile */
     @media (max-width: 600px) {
       body {
         background: url('https://i.imgur.com/qcmLwKW.jpeg') no-repeat center center fixed;
@@ -86,24 +87,29 @@
       }
 
       .sticker {
-        width: 50%;
+        width: 40%;
+        z-index: 1;
       }
 
       .sticker-1 {
-        top: 35%;
+        top: 40%;
         left: 50%;
-        transform: translateX(-50%);
+        transform: none;
+        z-index: 3;
       }
 
       .sticker-2 {
-        top: 35%;
+        top: 40%;
         right: 50%;
-        transform: translateX(50%);
+        transform: none;
+        z-index: 2;
       }
 
       .sticker-3 {
         top: 60%;
         left: 30%;
+        transform: none;
+        z-index: 1;
       }
 
       h1 {
