@@ -18,7 +18,10 @@
       background: url('https://i.imgur.com/2v6mkyq.jpeg') no-repeat center center fixed;
       background-size: cover;
       color: white;
-      position: relative;S               S                 h1 {
+      position: relative;
+    }
+
+    h1 {
       font-family: 'Poppins', sans-serif;
       font-weight: 700;
       color: white;
@@ -35,20 +38,18 @@
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       cursor: pointer;
-      
-      /* Bikin tidak kotak, sesuai bentuk PNG */
+
       -webkit-mask-repeat: no-repeat;
       -webkit-mask-size: cover;
       mask-repeat: no-repeat;
       mask-size: cover;
     }
 
-    /* Hover efek */
     .sticker:hover {
       transform: scale(1.08);
       box-shadow: 0 8px 12px rgba(0,0,0,0.3);
-      
     }
+
     .sticker-3 {
       transition: scale 0.3s ease, box-shadow 0.3s ease;
     }
@@ -57,7 +58,6 @@
       transform: scale(1.1);
     }
 
-    /* Tempat stiker desktop */
     .sticker-1 {
       top: 160px;
       left: 35%;
@@ -71,7 +71,7 @@
       -webkit-mask-image: url('https://i.imgur.com/Low5nVV.png');
       mask-image: url('https://i.imgur.com/Low5nVV.png');
     }
-Z
+
     .sticker-3 {
       top: 350px;
       right: 55%;
@@ -79,7 +79,6 @@ Z
       mask-image: url('https://i.imgur.com/LHZdQhs.png');
     }
 
-    /* Tampilan mobile */
     @media (max-width: 600px) {
       body {
         background: url('https://i.imgur.com/qcmLwKW.jpeg') no-repeat center center fixed;
@@ -93,11 +92,13 @@ Z
       .sticker-1 {
         top: 35%;
         left: 50%;
+        transform: translateX(-50%);
       }
 
       .sticker-2 {
         top: 35%;
         right: 50%;
+        transform: translateX(50%);
       }
 
       .sticker-3 {
